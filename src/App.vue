@@ -61,11 +61,11 @@ import whiteLogo from "./assets/imgs/whiteLogo.svg"
 const state = reactive({
   page: 0,
   showMenu: false,
-  textNum: 0,
+  textNum: 6,
   openHamburger: false,
   visitedPages: [], // Array to track visited pages
   visetedNum: 0, // Initialize visited number
-  showExam: false
+  showExam: true
 });
 
 
