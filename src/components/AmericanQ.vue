@@ -10,7 +10,7 @@
 השאלון קצר וביום טוב לוקח פחות מדקה למילוי</p>
         <button class="survey-button" @click="answerSurvuy()">משוב</button>
       </div>
-      <p class='black-small'>@2024 developed by Avital Hamburg</p>
+      <p class='black-small'>@2024 פותח ע"י אביטל גמבורג</p>
 
       <div class="retry-button" v-if="points < 70">
         <button id="share-button" @click="retryQuiz()">נסו שוב</button>
@@ -482,13 +482,14 @@ watch(currentIndex, () => {
 }
 .black-small{
   position: absolute;
-  color: rgb(7, 7, 7);
-  font-family: "Heebo-black";
-  text-align: right;
-  width: 60vw;
-  font-size: 14px;
-  margin-top: 91vh;
-  left: -10%;
+    color: rgb(7, 7, 7);
+    font-family: "Heebo-black";
+    text-align: right;
+    width: 100vw;
+    font-size:0.7em;
+    margin-top: 91vh;
+    direction: rtl;
+    right: 5%;
 }
 
 .share-buttons{
@@ -505,7 +506,7 @@ watch(currentIndex, () => {
     font-size: 1.2em;
     font-family: "Heebo";
     position: absolute;
-    right: 55%;
+    right: 50%;
     transform: translateX(50%);
     margin-top: 42vh;
 
