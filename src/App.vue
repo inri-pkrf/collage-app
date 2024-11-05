@@ -24,9 +24,7 @@
     <SocityCollage v-if="state.textNum === 3" @go-menu="nextSubj"></SocityCollage>
     <LibraryCollage v-if="state.textNum === 4" @go-menu="nextSubj"></LibraryCollage>
     <OutsideCollage v-if="state.textNum === 5" @go-menu="nextSubj"></OutsideCollage>
-    <LocationCollage v-if="state.textNum === 6" @go-menu="nextSubj"></LocationCollage>
-    <MapGame v-if="state.textNum === 7 && !state.showExam" @go-menu="nextSubj"></MapGame>
-    <Game v-if="state.textNum === 8 || state.showExam" @restart="restartAll"></Game>
+    <Game v-if="state.textNum === 6 || state.showExam" @restart="restartAll"></Game>
 
     <div class="overlay" v-if="state.openHamburger" @click="showHamburger">
       <img :src="whiteLogo" class="logo-hamburger">
@@ -52,8 +50,6 @@ import HelloWorld from './components/HelloWorld.vue';
 import KnowCollage from './components/KnowCollage.vue';
 import ActiveCollage from './components/ActiveCollage.vue';
 import OutsideCollage from './components/OutsideCollage.vue';
-import MapGame from './components/MapGame.vue';
-import LocationCollage from './components/LocationCollage.vue';
 import LibraryCollage from './components/LibraryCollage.vue';
 import SocityCollage from './components/SocityCollage.vue';
 
@@ -166,7 +162,7 @@ header {
   right: 50%;
   transform: translateX(50%);
   z-index: 9999;
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
 
   /* background-image: url("./assets/imgs/header.png"); */
   background-size: cover;

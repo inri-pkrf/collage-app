@@ -135,7 +135,7 @@ left: 0;
 height: 100vh;
 width: 100vw;
 /* background-image: url("../assets/imgs/Bg2.png"); */
-background-color: aliceblue;
+background-color: rgb(255, 255, 255);
 background-size: cover;
 background-repeat: no-repeat;
 padding: 0;
@@ -253,17 +253,9 @@ animation: fadeIn 1s ease;
   height: 8vh;
   width: auto;
   margin-top: 7vh;
-  animation: moveUpDown 2s infinite;
 }
 
-@keyframes moveUpDown {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-3vh);
-  }
-}
+
 
 .animate {
 animation: fadeIn 1s ease;

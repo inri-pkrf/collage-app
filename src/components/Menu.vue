@@ -47,7 +47,7 @@ const subjects = [
   'נכסים דיגיטליים',
   'הספרייה הלאומית לחירום',
   'קש"ח',
-  ' מה נמצא איפה?'];
+  ];
   
 const states = reactive(subjects.map(() => 0));
 
@@ -88,7 +88,7 @@ const moveToPage = (index) => {
   height: 100vh;
   width: 100vw;
   /* background-image: url("../assets/imgs/Bg2.png"); */
-  background-color: aliceblue;
+  background-color: 'white';
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0%;

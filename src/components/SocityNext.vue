@@ -80,7 +80,7 @@ position: fixed;
 top: 0;
 left: 0;
 width: 100vw;
-background-color: rgb(229, 232, 235);
+background-color:  rgb(255, 255, 255);
 background-size: cover;
 background-repeat: no-repeat;
 padding: 0;
@@ -203,17 +203,9 @@ height: auto;
   height: 10vh;
   width: auto;
   margin-top: 7vh;
-  animation: moveUpDown 2s infinite;
 }
 
-@keyframes moveUpDown {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-3vh);
-  }
-}
+
 .hide {
   font-size: 3em;
   color: transparent;
