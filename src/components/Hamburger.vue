@@ -38,7 +38,7 @@ const subjects = [
   'נכסים דיגיטליים',
   'הספרייה הלאומית לחירום',
   'קש"ח',
-  ,
+  ' מה נמצא איפה?',
 
 ];
 const states = reactive(subjects.map(() => 0));
